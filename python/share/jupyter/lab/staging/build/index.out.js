@@ -580,6 +580,16 @@ export async function main() {
       console.error(e);
     }
   }
+  if (!queuedFederated.includes('@jupyterlab/github')) {
+    try {
+      let ext = require('@jupyterlab/github');
+      for (let plugin of activePlugins(ext)) {
+        register.push(plugin);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  }
   if (!queuedFederated.includes('@kiteco/jupyterlab-kite')) {
     try {
       let ext = require('@kiteco/jupyterlab-kite');
