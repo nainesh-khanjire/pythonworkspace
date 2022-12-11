@@ -170,9 +170,7 @@
         "@jupyterlab/translation-extension": "~3.5.0",
         "@jupyterlab/ui-components-extension": "~3.5.0",
         "@jupyterlab/vdom-extension": "~3.5.0",
-        "@jupyterlab/vega5-extension": "~3.5.0",
-        "@jupyterlab/github": "file:../extensions/jupyterlab-github-3.0.1.tgz",
-        "@kiteco/jupyterlab-kite": "file:../extensions/kiteco-jupyterlab-kite-1.2.0.tgz"
+        "@jupyterlab/vega5-extension": "~3.5.0"
     },
     "devDependencies": {
         "@jupyterlab/builder": "^3.5.0",
@@ -249,9 +247,7 @@
             "@jupyterlab/tooltip-extension": "",
             "@jupyterlab/translation-extension": "",
             "@jupyterlab/ui-components-extension": "",
-            "@jupyterlab/vdom-extension": "",
-            "@jupyterlab/github": "",
-            "@kiteco/jupyterlab-kite": ""
+            "@jupyterlab/vdom-extension": ""
         },
         "mimeExtensions": {
             "@jupyterlab/javascript-extension": "",
@@ -316,35 +312,6 @@
         ],
         "linkedPackages": {},
         "staticDir": "../static",
-        "extensionMetadata": {
-            "@jupyterlab/github": {
-                "extension": true,
-                "discovery": {
-                    "server": {
-                        "managers": [
-                            "pip"
-                        ],
-                        "base": {
-                            "name": "jupyterlab_github"
-                        }
-                    }
-                },
-                "schemaDir": "schema",
-                "outputDir": "jupyterlab_github/labextension"
-            },
-            "@kiteco/jupyterlab-kite": {
-                "extension": true,
-                "discovery": {
-                    "server": {
-                        "base": {
-                            "name": "jupyter-kite"
-                        },
-                        "managers": [
-                            "pip"
-                        ]
-                    }
-                }
-            }
-        }
+        "extensionMetadata": {}
     }
 }
